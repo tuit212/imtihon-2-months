@@ -72,6 +72,12 @@
 .mb{
     margin-bottom: 14px;
 }
+.mb:hover{
+    color: #FFBD54;
+}
+.mb:active{
+    color: rgba(51, 51, 51, 0.7);
+}
 .footer > p{
     font-weight: 400;
     line-height: 18px;
