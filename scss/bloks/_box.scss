@@ -1,0 +1,115 @@
+.box__section{
+    padding: 200px 0 250px 0;
+}
+.box__title{
+    margin-bottom: 80px;
+    @include text-header (700 , 20px , 48px , #333);
+    text-align: center;
+}
+.box__list{
+    padding-left: 0;
+    @include center (space-between);
+    list-style: none;
+}
+.box__item:first-child{
+    width: 24%;
+    background: #FEFEFE;
+    border-radius: 5px;
+}
+.box__item:last-child{
+    width: 24%;
+    background: #FEFEFE;
+    border-radius: 5px;
+}
+.box__item-head{
+    width: 100%;
+    height: 180px;
+}
+.box__item-head > img{
+    width: 100%;
+    height: auto;
+}
+.box__item-body{
+    width: 100%;
+    padding: 41px 42px 37px 30px;
+    border: 1px solid #E4E4E2;
+    border-top: 1px solid transparent;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+.box__item-body-time{
+    position: absolute;
+    right: 22px;
+    top: 35px;
+    @include text-header (500 , 18px , 14px , #949494);
+}
+.box__item-body-subtitle{
+    margin: 0;
+    margin: 4px 0 10px 0;
+    @include text-header (700 , 25px , 22px , #000);
+}
+.box__item-body-text{
+    margin: 0;
+    margin-bottom: 34px;
+    @include text-header (400 , 20px , 16px , #949494);
+}
+.box__item-footer{
+    @include center (none);
+    cursor: pointer;
+}
+.box__item-footer-link{
+    margin-left: 8px;
+    @include text-header (500 , 21px , 16px , #333);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.box__item:nth-child(2){
+    width: 49%;
+    background-color: #fff;
+}
+.box__item-card{
+    @include center (space-between);
+}
+.box__item-card-picture{
+    width: 50%;
+}
+.box__item-card-picture > img {
+    width: 100%;
+    height: 100%;
+}
+.box__item-card-content{
+    width: 50%;
+    border: 1px solid #E4E4E2;
+    border-left: 1px solid transparent;
+    padding: 39px 34px 36px 34px;
+    position: relative;
+}
+.box__item-card-time{
+    position: absolute;
+    right: 35px;
+    top: 45px;
+}
+.box__item-card-links > a{
+    gap: 10px;
+    text-decoration: none;
+    @include text-header (400 , 22px , 14px , #3d9cea);
+}
+.box__item-card-links{
+    margin-bottom: 25px;
+}
+.box__item-body-subtitle{
+    margin: 0;
+    @include text-header (700 , 29px , 26px , #333)
+}
+.box__item-body-text{
+    margin: 0;
+    margin: 13px 0 28px 0;
+    @include text-header (400 , 20px , 16px , #949494);
+}
+.box__item-footer-link:hover{
+    color: #FFBD54;
+}
+.box__item-footer-link:active{
+    color: #333;
+    opacity: 0.7;
+}

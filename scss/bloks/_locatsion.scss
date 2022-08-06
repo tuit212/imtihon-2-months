@@ -1,0 +1,61 @@
+.locatsion{
+    @include center (space-between);
+}
+.locatsion__left{
+    width: 38%;
+    height: 645px;
+}
+.locatsion__left > iframe{
+    width: 100%;
+    height: 100%;
+}
+.locatsion__right{
+    width: 72%;
+    padding: 62px 0 74px 0;
+    background-color: #333;
+    background-image: url("../../img/photo.png");
+    background-size: 100%;
+}
+.card__locatsion-right{
+    width: 55%;
+    padding-left: 166px;
+}
+.locatsion__right-title{
+    margin: 0;
+    @include text-header (700 , 62px , 48px , #fff);
+}
+.locatsion__right-text{
+    margin: 0;
+    margin: 14px 0 29px 0;
+    @include text-header (400 , 20px , 16px , #949494);
+}
+.locatsion__right-form{
+    width: 100%;
+}
+.locatsion__right-form >  input{
+    width: 100%;
+    padding: 16px 22px 13px 22px;
+    margin-bottom: 14px;
+}
+.locatsion__right-form >  input::placeholder{
+   @include text-header (400 , 21px , 16px , #949494);
+}
+.locatsion__right-form > textarea{
+    width: 100%;
+    padding: 17px 22px 22px 22px;
+}
+.locatsion__right-form > textarea::placeholder{
+    @include text-header (400 , 21px , 16px , #949494);
+}
+
+.locatsion__right-form > button{
+    margin-top: 30px;
+    @include text-header (500 , 21px , 16px , #fff);
+    padding: 15px 49px 14px 50px;
+    background: #FFBD54;
+    border: none;
+    cursor: pointer;
+}
+.locatsion__left-local{
+    width: 100%;
+}

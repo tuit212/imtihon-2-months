@@ -1,0 +1,81 @@
+.site-footer{
+    margin-top: 250px;
+    background: #F3F3F3;
+    border: 1px solid #EBEBEB;
+}
+.footer__list{
+    padding: 55px 0 50px 0;
+    @include center (space-between);
+    align-items: flex-start;
+    padding-left: 0;
+    list-style: none;
+}
+.footer__item:first-child{
+    width: 158px;
+}
+.footer__item:first-child > a{
+    width: 100%;
+}
+.footer__item > ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer__item > ul > li > a{
+    @include text-header (600 , 21px , 16px , #333);
+    text-decoration: none;
+    display: inline-block;
+}
+.footer__item > ul > li > a > span{
+    font-weight: 700;
+}
+.footer__item-a{
+    position: relative;
+}
+.footer__item-a::before{
+    content: ' ';
+    position: absolute;
+    background-image: url("../../img/schedule.svg");
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.footer__item-aa{
+    position: relative;
+}
+.footer__item-aa::before{
+    content: ' ';
+    position: absolute;
+    background-image: url("../../img/house.svg");
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    left: -30px;
+    top: 3px;
+}
+.footer__item-aaa{
+    position: relative;
+}
+.footer__item-aaa::before{
+    content: ' ';
+    position: absolute;
+    background-image: url("../../img/phone.svg");
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    left: -30px;
+    top: 3px;
+}
+.mb{
+    margin-bottom: 14px;
+}
+.footer > p{
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: right;
+    color: #5C5C5C;
+}

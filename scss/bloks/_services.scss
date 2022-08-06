@@ -1,0 +1,64 @@
+.services-section{
+    margin: 191px 0 15px 0;
+}
+.services__title{
+    margin-bottom: 80px;
+    @include text-header (800 , 54px , 48px , #333);
+    text-align: center;
+}
+.services__list{
+    padding-left: 0;
+    @include center (space-between);
+    align-items: flex-start;
+    list-style: none;
+    position: relative;
+}
+.services__list::before{
+    position: absolute;
+    content: ' ';
+    width: 14px;
+    height: 26px;
+    background-image: url("../../img/seled.svg");
+    background-size: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: -43px;
+    cursor: pointer;
+}
+.services__list::after{
+    position: absolute;
+    content: ' ';
+    width: 14px;
+    height: 26px;
+    background-image: url("../../img/seled-right.svg");
+    background-size: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: -43px;
+    cursor: pointer;
+}
+.services__item{
+    width: 15%;
+    padding: 0 33px 0 33px;
+    height: 201px;
+    @include center (center);
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.services__item:hover{
+    opacity: 0.8;
+}
+.services__item:active{
+    opacity: 0.6;
+}
+.services__item-subtitle{
+    margin: 0;
+    margin-top: 21px;
+    @include text-header (800 , 22px , 18px , #333);
+}

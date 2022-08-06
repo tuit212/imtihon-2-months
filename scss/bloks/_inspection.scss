@@ -1,0 +1,83 @@
+.inspection-section{
+    margin-bottom: 235px;
+}
+.inspection{
+    @include center (space-between);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 42px 105px 43px 35px;
+}
+.inspection__images{
+    width: 47%;
+}
+.inspection__img{
+    width: 100%;
+}
+.inspection__content{
+    width: 47%;
+}
+.inspection__title{
+    margin: 0;
+    margin-bottom: 18px;
+    @include text-header (500 , 20px , 36px , #333);
+}
+.inspection__text{
+    margin: 0;
+    margin-bottom: 9px;
+    @include text-header (400 , 20px , 16px , #949494);
+}
+
+.inspection__contentbox-link{
+    margin-top: 25px;
+    padding: 15px 35px 16px 63px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.inspection__contentbox-link:first-child{
+    background-color: #FFBD54;
+    border-radius: 3px;
+}
+.inspection__contentbox-link:first-child::before{
+    content: ' ';
+    position: absolute;
+    background-image: url("../../img/money.svg");
+    width: 20px;
+    height: 26px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 33px;
+}
+.inspection__contentbox-link:last-child{
+    margin-left: 21px;
+    border-radius: 3px;
+    background: #333333;
+}
+.inspection__contentbox-link:last-child::before{
+    content: ' ';
+    position: absolute;
+    background-image: url('../../img/document.svg');
+    width: 20px;
+    height: 26px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 33px;
+}
+.inspection__contentbox-link:first-child:hover{
+    background-color: #333333;
+    color: #FFBD54;
+}
+.inspection__contentbox-link:first-child:active{
+    opacity: 0.6;
+}
+.inspection__contentbox-link:last-child:hover{
+    background-color: #FFBD54;
+    color: #FFf;
+}
+.inspection__contentbox-link:last-child:active{
+    opacity: 0.6;
+}
